@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    long long n;
+    scanf("%lld", &n);
+
+    if (n >= 5) {
+        printf("Yes");
+    } else {
+       
+        long long exp = 1LL << n; 
+        long long sq = n * n;
+
+        if (exp > sq)
+            printf("Yes");
+        else
+            printf("No");
+    }
+
+    return 0;
+}
